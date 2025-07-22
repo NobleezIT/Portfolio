@@ -1,216 +1,380 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="style.css" />
-        <link rel="stylesheet" href="mediaqueries.css" />
-    </head>
-    <body>
-        <nav id="desktop-nav">
-            <div class="logo"> Abdulazeez Ahmad</div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Abdulazeez Ahmad</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Abdulazeez Ahmad</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/myprofile.png" alt="Abdulazeez Ahmad profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Abdulazeez Ahmad</h1>
+        <p class="section__text__p2">Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/AbdulazeezResume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/abdulazeez-ahmad-97aa27281'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/NobleezIT'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Data Scientist</p>
             </div>
-        </nav>
-        <nav id="hamburger-nav">
-            <div class="logo"> Abdulazeez Ahmad</div>
-            <div class="hamburger-menu">
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="menu-links">
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-                </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br />PG Diploma in Education</p>
             </div>
-        </nav>
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/myprofile.png" alt="Abdulazeez Ahmad profile picture">
-            </div>
-            <div class="section__text">
-                <p class="section__text__p1">Hello, I'm</p>
-                <h1 class="title">Abdulazeez Ahmad</h1>
-                <p class="section__text__p2">Data Scientist</p>
-                <div class="btn-container">
-                    <button class="btn btn-color-2" onclick="window.open('./assets/AbdulazeezResume.pdf')">Download CV
-                        
-                    </button>
-                    <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info
-                        
-                    </button>
-                </div>
-                <div id="socials-container">
-                    <img 
-                    src="./assets/linkedin.png" alt="My LinkedIn Profile"
-                    class="icon" onclick="location.href='https://linkedin.com'"/>
-                    <img src="./assets/github.png" alt="My Github Profile"
-                    class="icon" onclick="location.href='https://github.com'"/>
-                </div>
-
-            </div>
-        </section>
-        <section id="about">
-            <p class="section__text__p1">Get to Know More</p>
-            <h1 class="title">About Me</h1>
-            <div class="section-container">
-              <!-- Left side image -->
-              <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-              </div>
-          
-              <!-- Right side (details and summary) -->
-              <div class="about-right-container">
-                <div class="about-details-container">
-                  <div class="details-container">
-                    <img src="./assets/experience.png" alt="experience icon" class="icon" />
-                    <h3>Experience</h3>
-                    <p>3+ years <br />Data Scientist</p>
-                  </div>
-                  <div class="details-container">
-                    <img src="./assets/education.png" alt="education icon" class="icon" />
-                    <h3>Education</h3>
-                    <p>B.Sc. Bachelors Degree<br />PG Diploma in Education</p>
-                  </div>
-                </div>
-          
-                <div class="text-container">
-                  <p>
-                    I’m a passionate data science and analytics educator with 3+ years of experience teaching technical and digital skills to diverse learners. My background combines hands-on data science/analytics expertise with a strong ability to simplify complex concepts using relatable, practical examples.
-                  </p>
-                  <p>
-                    I’ve led workshops and training sessions on Python programming, data analysis, and emerging tools like AI for productivity. I’m committed to making tech education inclusive and accessible, empowering individuals with real-world, job-ready skills.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section id="projects">
-            <h2 class="section__title">Projects</h2>
-            <div class="project-list">
-          
-              <div class="project">
-                <h3>Resume Analyzer App</h3>
-                <p>An AI-powered tool that analyzes resumes and matches them to job descriptions. Built with Python, Streamlit, and machine learning libraries.</p>
-                <div class="btn-container">
-                  <a href="https://github.com/NobleezIT/Resume" target="_blank" class="btn btn-color-1">GitHub</a>
-                  <a href="https://resume-fnpuok7ixxaxk2nhzsffpx.streamlit.app/" target="_blank" class="btn btn-color-2">Live Demo</a>
-                </div>
-              </div>
-          
-              <div class="project">
-                <h3>Nigerian Produce Classifier</h3>
-                <p>A deep learning app that classifies local Nigerian agricultural produce (e.g. maize, beans, groundnut, millet) using a pretrained CNN model on PyTorch.</p>
-                <div class="btn-container">
-                  <a href="https://github.com/NobleezIT/Produce_classifier?tab=readme-ov-file" target="_blank" class="btn btn-color-1">GitHub</a>
-                  <a href="https://appuceclassifier-iwm7gakz5j2frwqxyhbunp.streamlit.app/" target="_blank" class="btn btn-color-2">Live Demo</a>
-                </div>
-              </div>
-          
-              <div class="project">
-                <h3>Hungry Snake Game</h3>
-                <p>A classic snake game developed in Python with a graphical interface using Pygame.</p>
-                <div class="btn-container">
-                  <a href="https://github.com/NobleezIT/HungrySnakeApp" target="_blank" class="btn btn-color-1">GitHub</a>
-                  <a href="https://www.youtube.com/watch?v=6pqWsNjTdsQ" target="_blank" class="btn btn-color-2">Video Demo</a>
-                </div>
-              </div>
-          
-              <div class="project">
-                <h3>SwiftChain Analytics Project</h3>
-                <p>A complete data analytics case study built for SwiftChain Logistics using Power BI and Python to drive insights from operational data.</p>
-                <div class="btn-container">
-                  <a href="https://github.com/NobleezIT/SwiftChain_Analytics_Project" target="_blank" class="btn btn-color-1">GitHub</a>
-                </div>
-              </div>
-          
-            </div>
-          </section>
-          <section id="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-              <div class="skill-category">
-                <h3>Programming</h3>
-                <ul>
-                  <li>Python</li>
-                  <li>JavaScript</li>
-                  <li>HTML & CSS</li>
-                  <li>SQL</li>
-                </ul>
-              </div>
-              <div class="skill-category">
-                <h3>Data Science & ML</h3>
-                <ul>
-                  <li>Pandas, NumPy, Matplotlib</li>
-                  <li>Scikit-learn</li>
-                  <li>PyTorch</li>
-                  <li>Streamlit</li>
-                  <li>Model Deployment</li>
-                </ul>
-              </div>
-              <div class="skill-category">
-                <h3>Analytics & BI Tools</h3>
-                <ul>
-                  <li>Microsoft Power BI</li>
-                  <li>Tableau</li>
-                  <li>Google Looker Studio</li>
-                  <li>SQL (for analysis & reporting)</li>
-                </ul>
-              </div>
-              <div class="skill-category">
-                <h3>Tools & Platforms</h3>
-                <ul>
-                  <li>Git & GitHub</li>
-                  <li>Jupyter Notebook</li>
-                  <li>Google Colab</li>
-                  <li>VS Code</li>
-                  <li>GitHub Pages</li>
-                </ul>
-              </div>
-              <div class="skill-category">
-                <h3>Soft Skills</h3>
-                <ul>
-                  <li>Instructional Design</li>
-                  <li>Technical Training</li>
-                  <li>Team Collaboration</li>
-                  <li>Problem Solving</li>
-                </ul>
-              </div>
-            </div>
-          </section>
-          <section id="contact">
-            <h2>Contact</h2>
-            <p>Interested in working together or have a question? Reach out to me below:</p>
-            <div class="contact-info">
-              <p><strong>Email:</strong> <a href="mailto:azeezahmad518@gmail.com">azeezahmad518@gmail.com</a></p>
-              <p><strong>Phone:</strong> +234 706156 2666</p>
-              <p><strong>Location:</strong> Nigeria (Remote Available)</p>
-              <div class="social-links">
-                <a href="https://www.linkedin.com/in/abdulazeez-ahmad-97aa27281/" target="_blank">LinkedIn</a> |
-                <a href="https://github.com/NobleezIT" target="_blank">GitHub</a> |
-                <a href="https://x.com/NobleezIT" target="_blank">Twitter</a>
-              </div>
-            </div>
-          </section>                                 
-        <script src="script.js"></script>
-        <footer>
-            <p>© 2025 Abdulazeez Ahmad | Made with 💻 and ☕ | 
-              <a href="https://mail.google.com/mail/?view=cm&to=azeezahmad518@gmail.com" target="_blank" rel="noopener noreferrer">
-                Contact Me
-              </a>
+          </div>
+          <div class="text-container">
+            <p>
+              I’m a passionate data science and analytics educator with 4+ years of experience teaching technical and digital skills to diverse learners. My background combines hands-on data science/analytics expertise with a strong ability to simplify complex concepts using relatable, practical examples.
             </p>
-          </footer>          
-    </body>
+            <p>
+              I’ve led workshops and training sessions on Python programming, data analysis, and emerging tools like AI for productivity. I’m committed to making tech education inclusive and accessible, empowering individuals with real-world, job-ready skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Science</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Pytorch</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TensorFlow</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Data Analysis</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Microsoft BI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NobleezIT/Produce_classifier'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://appuceclassifier-iwm7gakz5j2frwqxyhbunp.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NobleezIT/Hypertension_Predictor'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NobleezIT/Hypertension_Predictor/blob/main/hypertension-risk-prediction.ipynb'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/NobleezIT/Resume'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://resume-fnpuok7ixxaxk2nhzsffpx.streamlit.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="https://mail.google.com/mail/?view=cm&to=azeezahmad518@gmail.com">azeezahmad518@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/abdulazeez-ahmad-97aa27281/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Abdulazeez Ahmad. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
-
