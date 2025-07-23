@@ -634,3 +634,9 @@ footer {
   padding-top: 1rem;
   margin-top: 2rem;
 }
+
+
+#about {
+  text-align: justify;
+  line-height: 1.6;
+}
